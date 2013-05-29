@@ -50,6 +50,13 @@ $(document).ready(function(){
 			timer = setInterval('slide("right")', auto_slide_seconds); 
 		});
 	}
+	
+	//split the text in text content area
+	var text = $('#text_content').text();
+	var tokens = text.split(' ');
+	var n = Math.floor(tokens.length/2);
+	var html = '<p class="left">'+tokens.slice(0, n).join(' ') + '</p><p class="right">' + tokens.slice(n+1, tokens.length).join(' ') + '</p>';
+	$('#text_content').html(html);
 });
 
 //function for carousel

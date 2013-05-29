@@ -100,7 +100,13 @@ body{
 	color: #fff;
 }
 
+/*----- main navigation -----*/
+#main_nav{
+	height: 30px;
+	background-color: #CFE2F3;
+}
 /*------- main navigation nav bar -------*/
+
 #main_nav ul {
 	font-size: 14px; 
 	margin: 0px 20px; 
@@ -113,7 +119,8 @@ body{
 	display: block;
 	text-decoration: none;
 	color: #5F7E9B;
-	padding: 7px 15px;
+	margin-top: 1px;
+	padding: 6px 15px;
 }
 #main_nav ul li a:hover{
 	background-color: #fff;
@@ -231,6 +238,19 @@ body{
 	margin-left: 5px;
 }
 
+
+/*----- text_content -----*/
+#text_content {
+	margin: 20px 0px;
+}
+#text_content .left{
+	float: left;
+	width: 47%;
+}
+#text_content .right{
+	float: right;
+	width: 47%;
+}
 
 
 /* clear float items */
