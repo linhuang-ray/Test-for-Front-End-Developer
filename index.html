@@ -13,27 +13,28 @@
         <h1>Logo</h1>
         <!--nav-->
         <div class='nav'>
-          <ul>
-  					<li><a href='#'>Section 1</a>
-							<ul>
-								<li><a href='#'>Sub-section1</a></li>
-								<li><a href='#'>Sub-section2</a></li>
-								<li><a href='#'>Sub-section3</a></li>
-							</ul>
-						</li>
-						<li><a href='#'>Section 2</a>
-							<ul>
-								<li><a href='#'>Sub-section4</a></li>
-								<li><a href='#'>Sub-section5</a></li>
-						</li>
+			<ul>
+				<li><a href='#'>Section 1</a>
+					<ul>
+						<li><a href='#'>Sub-section1</a></li>
+						<li><a href='#'>Sub-section2</a></li>
+						<li><a href='#'>Sub-section3</a></li>
 					</ul>
+				</li>
+				<li><a href='#'>Section 2</a>
+					<ul>
+						<li><a href='#'>Sub-section4</a></li>
+						<li><a href='#'>Sub-section5</a></li>
+					</ul>
+				</li>
+			</ul>		
         </div><!--end of nav-->
         
         <!-- login panel -->
         <div id='login_panel'>
   				<h5><a href='#'>Login in</a></h5>
-					<h5><a href='#'>Sign up</a></h5>
-				</div><!-- end of login panel -->
+				<h5><a href='#'>Sign up</a></h5>
+		</div><!-- end of login panel -->
       </div>
       <!--end of header -->
       
@@ -53,9 +54,84 @@
       <!-- end of main nav -->
       
       <!-- main content -->
-      <div id='main'>
-        
-      </div>
+		<div id='main'>
+			<!-- media grid -->
+			<div id='grid'>
+				<div class='media column_left'>
+					<img src='img/placeholder1.jpg' alt='place holder image' class='whole_image'/>
+				</div>
+				<div class='media column_middle'>
+					<p><img src='img/placeholder1.jpg' alt='place holder image' class='text_image' />
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla feugiat turpis, 
+					a consequat neque varius et. Etiam euismod, felis in elementum malesuada, leo massa pellentesque mauris, 
+					sed semper lacus lorem eget turpis. Nulla facilisi. Duis et viverra lorem. Donec et lacinia diam. Aenean 
+					eget justo neque, quis pharetra mauris. Integer egestas ultricies tellus quis commodo.</p>
+				</div>
+				<div class='media column_right'>
+					<iframe width='280' height='280' src='http://www.youtube.com/embed/6t9EcaSO6dY?list=UUETZ7r1_8C1DNFDO-7UXwqw' frameborder='0' allowfullscreen></iframe>
+				</div>
+				<div class='media column_left'>
+					<h3>Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla feugiat turpis, 
+					a consequat neque varius et. Etiam euismod, felis in elementum malesuada, leo massa pellentesque mauris, 
+					sed semper lacus lorem eget turpis. Nulla facilisi. Duis et viverra lorem. Donec et lacinia diam. Aenean 
+					eget justo neque, quis pharetra mauris. Integer egestas ultricies tellus quis commodo.</p>
+				</div>
+				<div class='media column_middle'>
+				</div>
+				
+				<div class='clear'></div>
+			</div>
+			<!-- end of grid -->
+			
+			<!-- tabs -->
+			<div id='tabs'>
+				<ul class='tabs'>
+					<li><a href='#tab1'>Tab 1</a></li>
+					<li><a href='#tab2'>Tab 2</a></li>
+					<li><a href='#tab3'>Tab 3</a></li>
+					<li><a href='#tab4'>Tab 4</a></li>
+				</ul>
+				<div id='tab1' class='tab_content'>
+					<div id='carousel_container'>
+						<div id='left_scroll'>
+							<a href='javascript:slide("left");'><img src='img/arrow-left.png' /></a>
+						</div>
+						<div id='carousel_inner'>
+							<ul id='carousel_ul'>
+								<li><a href='#'><img id='' src='img/picture1.jpg' /></a></li>
+								<li><a href='#'><img id='' src='img/picture2.jpg' /></a></li>
+								<li><a href='#'><img id='' src='img/picture3.jpg' /></a></li>
+								<li><a href='#'><img id='' src='img/picture1.jpg' /></a></li>
+								<li><a href='#'><img id='' src='img/picture2.jpg' /></a></li>
+								<li><a href='#'><img id='' src='img/picture3.jpg' /></a></li>
+							</ul>
+						</div>
+						<div id='right_scroll'>
+							<a href='javascript:slide("right");'><img src='img/arrow-right.png' /></a>
+						</div>
+						<div class="clear" ></div>
+					</div>
+							
+				</div>
+				<div id='tab2' class='tab_content'>
+					<h3>Section 2</h3>
+					<p>	Aenean et est tortor. In pharetra pretium convallis. Mauris sollicitudin 
+						ligula non mi hendrerit varius. Fusce convallis hendrerit mauris, eu accumsan 
+								nisl aliquam eu.
+					</p>
+				</div>
+				<div id='tab3' class='tab_content'>
+					<p>And this is the 3rd tab.</p>
+				</div>
+				<div id='tab4' class='tab_content'>
+					<p>And this is the 4th tab.</p>
+				</div>
+			</div>
+		<!-- end of tabs -->
+		
+		</div>
       
     </div>
+	</body>
 </html>
