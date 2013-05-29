@@ -57,6 +57,35 @@ $(document).ready(function(){
 	var n = Math.floor(tokens.length/2);
 	var html = '<p class="left">'+tokens.slice(0, n).join(' ') + '</p><p class="right">' + tokens.slice(n+1, tokens.length).join(' ') + '</p>';
 	$('#text_content').html(html);
+	
+	//autocomplete
+	var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#search_input" ).autocomplete({
+      source: availableTags
+    });
 });
 
 //function for carousel
